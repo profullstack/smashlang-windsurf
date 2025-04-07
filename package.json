@@ -1,0 +1,44 @@
+{
+  "name": "smashlang",
+  "displayName": "SmashLang",
+  "description": "SmashLang language support for Windsurf",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "smashlang",
+        "aliases": [
+          "SmashLang",
+          "smashlang"
+        ],
+        "extensions": [
+          ".smash"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "smashlang",
+        "scopeName": "source.smash",
+        "path": "./syntaxes/smashlang.tmLanguage.json"
+      }
+    ]
+  },
+  "activationEvents": [
+    "onLanguage:smashlang"
+  ],
+  "main": "./extension.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
